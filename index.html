@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Chaveamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+        <h1>
+            Juvenil
+        </h1>
+        <h2>
+            Faixa azul
+        </h2>
+        <div class="tournament-grid">
+            <!-- Primeira Fase -->
+            <div class="round round-1">
+                <div class="match-box">
+                    <div class="team">Equipe 1</div>
+                    <div class="team">Equipe 2</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down"><span class="connect-right" id="chave1"></span></div>
+                </div>
+                <div class="match-box" >
+                    <div class="team">Equipe 3</div>
+                    <div class="team">Equipe 4</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down"><span class="connect-right" id="chave2"></span></div>
+                </div>
+                <div class="match-box">
+                    <div class="team">Equipe 5</div>
+                    <div class="team">Equipe 6</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down"><span class="connect-right" id="chave3"></span></div>
+                </div>
+                <div class="match-box" >
+                    <div class="team">Equipe 7</div>
+                    <div class="team">Equipe 8</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down"><span class="connect-right" id="chave4"></span></div>
+                </div>
+            </div>
+
+            <!-- Semifinais -->
+            <div class="round round-2">
+                <div class="match-box">
+                    <div class="team">Vencedor 1</div>
+                    <div class="team">Vencedor 2</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down"><span class="connect-right" id="chave5"></span></div>
+                </div>
+                <div class="match-box">
+                    <div class="team">Vencedor 3</div>
+                    <div class="team">Vencedor 4</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down"><span class="connect-right" id="chave6"></span></div>
+                </div>
+            </div>
+
+            <!-- Final -->
+            <div class="round final">
+                <div class="match-box">
+                    <div class="team">finalista1</div>
+                    <div class="team">finalista2</div>
+                    <div class="connect-right"></div>
+                    <div class="connect-down">
+                        <span class="connect-right" id="chave7"></span>
+                        <span class="connect-right" id="chave8"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ganhador-->
+            <div class="winner">
+                <div class="match-box">
+                    <div class="win">Campeão 🏆</div>
+                    <div class="team">Nome do campeão</div>
+                </div><br><br><br><br><br><br><br><br><br>
+                <div class="match-box" id="colocacao2">
+                    <div class="win">Vice-Campeão 🥈</div>
+                    <div class="team">Nome do Vice-campeão</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

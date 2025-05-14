@@ -1,0 +1,155 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 40px;
+    background: #2f7cbfb6;
+    border-top: #2f7cbf1a;
+    border-bottom: #2f7cbf1a;
+}
+
+h1 h2 {
+    position: flex;
+    background-position: 50%;
+    left: 50%;
+}
+
+.tournament-grid {
+    display: flex;
+    justify-content: center;
+    min-width: 800px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0 60px;
+    position: relative;
+}
+
+.match-box {
+    border: 2px solid #3b4f62;
+    border-radius: 6px;
+    background: rgba(85, 66, 66, 0.574);
+    width: 200px;
+    position: relative;
+}
+
+.team {
+    padding: 12px;
+    min-height: 40px;
+    position: relative;
+}
+
+.team:not(:last-child) {
+    border-bottom: 2px solid #3b4f62;
+}
+
+.round-2 {
+    margin-top: 100px;
+    margin-left: 68px;
+}
+
+/* Linhas Horizontais */
+.connect-right {
+    position: absolute;
+    background: #6c757d;
+    height: 2px;
+    width: 65px;
+    top: 50%;
+    right: -65px;
+}
+
+/* Linhas Verticais */
+.connect-down {
+    position: absolute;
+    background: #6c757d;
+    width: 2px;
+    right: -65px;
+}
+#chave1, #chave3 {
+   
+    margin-top: 35px;
+    
+}
+
+#chave5 {
+    margin-top: 90px;
+}
+
+#chave2, #chave4 {
+    margin-top: -40px;
+}
+
+#chave6 {
+    margin-top: -98px;
+}
+
+/* Conexões para primeira fase */
+.round-1 .match-box:nth-child(1) .connect-down, .round-1 .match-box:nth-child(3) .connect-down {
+    height: 74px;
+    top: 50%;
+}
+
+.round-2 .match-box:nth-child(1) .connect-down {
+    height: 185px;
+    top: 50%;
+}
+
+.round-1 .match-box:nth-child(2) .connect-down, .round-1 .match-box:nth-child(4) .connect-down{
+    height: 80px;
+    bottom: 50%;
+}
+
+.round-2 .match-box:nth-child(2) .connect-down {
+    height: 195px;
+    bottom: 50%;
+}
+
+.round-2 .match-box:nth-child(2) {
+    margin-top: 211px;
+}
+.final {
+    margin-left: 68px;
+
+}
+
+.final .match-box .connect-down {
+    height: 300px;
+    bottom: -65%;
+    
+}
+
+#chave7 {
+    margin-top: 150px;
+}
+
+#chave8 {
+    margin-top: -150px;
+}
+
+
+/* Estilo para final */
+.final .match-box {
+    border-color: hsla(212, 72%, 59%, 0.11);
+    margin-top: 300px;
+}
+
+.winner {
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.winner .match-box .win{
+    background-color: green;
+    content: '🏆';
+    justify-content:center;
+    align-items: center;
+    width: 151px;
+    padding: 25px;
+}
+
+
